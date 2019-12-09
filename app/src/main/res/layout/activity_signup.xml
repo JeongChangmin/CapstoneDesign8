@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/jalnan"
+    android:background="#FFFFFF"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:fontFamily="@font/jalnan"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:fontFamily="@font/jalnan"
+            android:layout_height="245dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/signup" />
+
+            <ImageButton
+                android:id="@+id/gotologinbutton"
+                android:fontFamily="@font/jalnan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#00FFFFFF"
+                app:srcCompat="@drawable/x" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:fontFamily="@font/jalnan"
+            android:layout_height="213dp">
+
+            <EditText
+                android:id="@+id/emailtext"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="100dp"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="321dp"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                app:srcCompat="@drawable/loginicon" />
+
+            <EditText
+                android:id="@+id/passwordtext"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailtext" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="321dp"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/loginicon" />
+
+            <EditText
+                android:id="@+id/passwordchecktext"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="35dp"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="PasswordAgain"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordtext" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jalnan"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                app:srcCompat="@drawable/loginicon" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jalnan"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/buttonCreate"
+                    android:fontFamily="@font/jalnan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/signupbt" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/activity_view_loader"
+        android:fontFamily="@font/jalnan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

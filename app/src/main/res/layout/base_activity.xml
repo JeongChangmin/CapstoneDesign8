@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white"
+	tools:ignore="missingPrefix">
+
+	<LinearLayout
+		android:id="@+id/contentView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		tools:layout_editor_absoluteX="0dp"
+		tools:layout_editor_absoluteY="-16dp">
+	</LinearLayout>
+
+	<com.example.capstonedesign.ui.GooeyMenu
+		android:id="@+id/gooeyMenu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp"
+		app:fab_radius="@dimen/big_circle_radius"
+		app:gap_between_menu_fab="@dimen/min_gap"
+		app:layout_constraintBottom_toBottomOf="@+id/contentView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:menu_drawable="@array/drawable_array"
+		app:menu_radius="@dimen/small_circle_radius"
+		app:no_of_menu="5" />
+
+	<FrameLayout
+		android:id="@+id/frameLayout5"
+		android:layout_width="182dp"
+		android:layout_height="43dp"
+		android:layout_marginStart="100dp"
+		android:layout_marginLeft="100dp"
+		android:layout_marginTop="5dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<EditText
+			android:id="@+id/searchPoi"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:fontFamily="@font/jalnan"
+			android:background="@android:color/white"
+			android:hint="검색어를 입력하세요" />
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_width="55dp"
+		android:layout_height="49dp"
+		android:layout_marginTop="2dp"
+		app:layout_constraintStart_toEndOf="@+id/frameLayout5"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageButton
+			android:id="@+id/btnFindAllPoi"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@android:color/transparent"
+			android:src="@drawable/search" />
+	</FrameLayout>
+
+	<FrameLayout
+		android:id ="@+id/searchFrame"
+		android:layout_width="300dp"
+		android:layout_height="213dp"
+		android:layout_marginEnd="50dp"
+		android:layout_marginRight="50dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/frameLayout5"
+		android:background="@android:color/white">
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/searchResult"
+
+			android:scrollbars="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+	</FrameLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+

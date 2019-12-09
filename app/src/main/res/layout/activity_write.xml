@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/jalnan"
+    android:background="#6DDDD5"
+    tools:context=".Write">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/jalnan"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:fontFamily="@font/jalnan"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/title" />
+
+            <EditText
+                android:id="@+id/editTitleText"
+                android:layout_width="324dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/jalnan"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent"
+                android:ems="10"
+                android:hint="제목"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editContentsText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/contentsLayout"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/jalnan"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editContentsText"
+                android:layout_width="398dp"
+                android:layout_height="299dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/jalnan"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="내용을 입력하세요"
+                android:inputType="textPersonName"
+                android:lines="10"
+                android:scrollHorizontally="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTitleText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/jalnan"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:fontFamily="@font/jalnan"
+                android:layout_height="143dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/buttonPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/addphoto" />
+
+                <ImageButton
+                    android:id="@+id/buttonAddCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/addcourse" />
+
+                <ImageButton
+                    android:id="@+id/buttonSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/savecourse" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

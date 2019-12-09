@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/jalnan"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    tools:context=".Item_Gallery">
+
+    <ImageView
+        android:id="@+id/photos"
+        android:layout_width="130dp"
+        android:fontFamily="@font/jalnan"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+</androidx.cardview.widget.CardView>
